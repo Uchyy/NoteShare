@@ -6,13 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+    <ImageView
+            android:layout_width="69dp"
+            android:layout_height="58dp" app:srcCompat="@drawable/main_icon_foreground"
+            android:id="@+id/appIcon" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp" app:layout_constraintHorizontal_bias="0.0"
+            android:contentDescription="AppIconImageView"/>
+    <SearchView
+            android:layout_width="244dp"
+            android:layout_height="57dp"
+            android:id="@+id/searchView" android:orientation="horizontal" android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/appIcon" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.244"/>
+    <ImageView
+            android:layout_width="47dp"
+            android:layout_height="54dp" app:srcCompat="@drawable/account_foreground"
+            android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchView" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.681"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
